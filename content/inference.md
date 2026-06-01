@@ -2,7 +2,7 @@
 
 Training and inference are **separate steps**: [training](training.md) fits the model's
 weights; inference *uses* those weights to produce text. Once you have a checkpoint
-(`ckpt.pt`), [model/sample.py](../../model/sample.py) generates from it.
+(`ckpt.pt`), [model/sample.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/sample.py) generates from it.
 
 ```powershell
 python sample.py --prompt "hello" --max-new-tokens 200 --temperature 0.8 --top-k 40
@@ -10,7 +10,7 @@ python sample.py --prompt "hello" --max-new-tokens 200 --temperature 0.8 --top-k
 
 ## How it works
 
-The model already supports generation — [model.py](../../model/lokolm/model.py) has a
+The model already supports generation — [model.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/lokolm/model.py) has a
 `generate()` method. For each new token it:
 
 1. **Crops** the running sequence to the last `block_size` tokens (the model can't attend

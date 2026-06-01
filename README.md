@@ -24,9 +24,19 @@ All content is Markdown under [content/](content/):
 - `training.md` — GPU / CUDA training guide
 - `inference.md` — generating text from a checkpoint
 - `roadmap.md` — the v2 roadmap
+- `contributing.md` — how to contribute (training data & checkpoints)
 
 To add a page: drop a new `.md` file in `content/` and add an entry to
 [lib/docs-meta.js](lib/docs-meta.js). It appears in the sidebar automatically.
+
+## Contributing & license
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) (also published as the
+[Contributing](content/contributing.md) docs page). Released under the [MIT License](LICENSE)
+© 2026 Mahmud Suberu / Larnova.
+
+Maintained by **Mahmud Suberu** — Founder & CEO of Larnova. Contact:
+[LinkedIn](https://www.linkedin.com/in/mahmud-adinoyi-684020235/).
 
 ## Deploy to Netlify
 

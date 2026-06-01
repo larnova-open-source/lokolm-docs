@@ -1,8 +1,8 @@
 # Training on GPU (CUDA)
 
 This documents how to train the decoder-only Transformer in
-[model/lokolm/model.py](../../model/lokolm/model.py) on an NVIDIA GPU. The training loop
-lives in [model/train.py](../../model/train.py).
+[model/lokolm/model.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/lokolm/model.py) on an NVIDIA GPU. The training loop
+lives in [model/train.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/train.py).
 
 ## 1. Install PyTorch with CUDA
 
@@ -34,7 +34,7 @@ otherwise it uses a tiny built-in sample so the script runs out of the box.
 
 ## 3. What makes it use the GPU efficiently
 
-The loop in [train.py](../../model/train.py) applies the standard set of CUDA training
+The loop in [train.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/train.py) applies the standard set of CUDA training
 techniques. Each maps to a specific line:
 
 ### Device placement
@@ -135,7 +135,7 @@ torchrun --standalone --nproc_per_node=NUM_GPUS train.py
 ```
 
 DDP requires wrapping the model in `DistributedDataParallel` and sharding the data per
-rank — out of scope for this minimal script, but [train.py](../../model/train.py) is structured so
+rank — out of scope for this minimal script, but [train.py](https://github.com/Larnova-Open-Source/lokolm/blob/main/train.py) is structured so
 that wrapping is straightforward when you need it.
 
 ## 6. Checkpoints
