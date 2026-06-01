@@ -1,0 +1,10 @@
+# Netlify deployment config for the lokoLM docs (Next.js static export).
+# Set this repository's "base directory" to the repo root on Netlify (or to the
+# folder containing this file). The static export goes to `out/`.
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
