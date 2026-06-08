@@ -8,3 +8,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # Points the Contribute Data upload page at the live API instead of localhost.
+  # NEXT_PUBLIC_ vars are inlined at build time, so a redeploy is required to apply.
+  NEXT_PUBLIC_INTAKE_API_URL = "https://api.larnova.co"
